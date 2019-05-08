@@ -1,6 +1,77 @@
+/* universal */
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+html, body {
+  line-height: 1.15; /* 1 */
+  text-size-adjust: 100%; /* 2 */
+  box-sizing: border-box;
+  font-size: 100%;
+}
+small {
+  font-size: 80%;
+}
+
+/* universal*/
+
+#logo{
+  background: url("images/logo.png") no-repeat;
+  height: 3em;
+}
+
+
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    body {background: red;}
+    body {
+      /* background: red; */
+      color: darkred;
+    }
+    nav{
+      display: grid;
+      grid-template-columns: 1fr auto;
+      box-shadow: 0 0 32px rgba(0,0,0,.15);
+      background: rgb(255, 255, 255);
+    }
+    .line{
+      border-bottom: 1px solid red;
+      border-top: transparent;
+      border-right: transparent;
+      border-left: transparent;
+      height: 5px;
+      width: 30px;
+    }
+    .msg-nav{
+      background: rgb(255, 217, 0);
+      font-size: .7em;
+      text-align: center;
+      padding: 0.8em 0;
+      color: black
+    }
+    .top-ul{
+      display: none;
+    }
+    .bottom-ul{
+      display: none;
+    }
+
+    .headlines{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 10px;
+      padding: 0 0.2em;
+    }
+
+    .row-items{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      padding: 1em;
+    }
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
