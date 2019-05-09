@@ -1,8 +1,13 @@
 /* universal */
 *{
   margin: 0;
-  padding: 0;
-  
+  padding: 0;  
+}
+ul{
+  list-style: none;
+}
+ul li a{
+  text-decoration: none;
 }
 
 html, body {
@@ -165,6 +170,20 @@ h2{
       display: flex;
       flex-direction: column;
     }
+    .funding-heading{
+      padding: 0 1em;
+    }
+    .funding-links{
+      padding: 0 1.5em;
+      list-style: none;      
+      text-decoration: none;
+    }
+    .funding-links li a{
+      text-decoration: none;
+      line-height: 1.5;
+      color:red;
+    }
+
 
     .funding-round-item{
       padding: 1em;
@@ -258,10 +277,11 @@ h2{
     }
 
     .box-content{
-      background: rgb(252, 236, 205);
+      background: rgb(255, 240, 247);
       font-size: 0.8em;
       color: #ff1000;
       padding: 0.6em;
+      line-height: 1.5;
     }
 
     .box-img img{
@@ -270,18 +290,85 @@ h2{
     }
 
     .article-list{
-      padding: 1em 3em;
+      padding: 1em 1.7em;
+    }
+    .article-list li::before{
+      content: "\2022";
+      color: red;
+      font-weight: bold;
+      display: inline-block; 
+      width: 1em;
+      margin-left: -1em;
     }
 
     .article-list li{
       padding: 0.6em 0;
       font-size: 0.8em;
-      color: black;
-      border-bottom: 1px solid lightgray;
+      color: rgb(62, 62, 62);
+      border-bottom: 1px solid lightgray;      
+      line-height: 1.5;
     }
 
     .latest-deals{
       padding: 0 1em;
+    }
+    .box-content h4{
+      padding-bottom: 0.5em;
+    }
+
+    footer{
+      color: white;
+    }
+    .footer-top{
+      background: #131313;
+      padding: 1em 0;
+    }
+    .fab{
+      background: rgb(38, 38, 38);
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      padding: 14px 14px 14px 14px;
+      text-align: center;
+      margin-right: 0.5em;    
+      display: inline-block;
+    }
+    .footer-top{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 1em;      
+    }
+    .footer-imgs{
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      padding: 0 0 0 1em;
+    }
+    .footer-hrefs ul{
+      text-align: center;
+      padding-top: 1em;
+    }
+    .footer-hrefs ul li{
+      display: inline-block;            
+    }
+
+    .footer-hrefs ul li a{
+      text-align: center;
+      text-transform: uppercase;
+      color: darkgrey;
+      font-size: 1em;
+      line-height: 1.5;
+    }
+    .footer-bottom{
+      padding: 3em;
+      text-align: center;
+      background: black;
+      font-size: 0.8em;
+      line-height: 1.7;
+    }
+    .footer-bottom span{
+      color: gray;      
     }
 
   }
