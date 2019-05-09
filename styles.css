@@ -85,17 +85,34 @@ small {
     }
 
     .headlines{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      grid-gap: 10px;
-      padding: 0 0.2em;
+
     }
 
     .row-items{
       display: grid;
       grid-template-columns: 1fr 2fr;
       padding: 1em;
+    }
+
+    .headlines img{
+      width: 100%;
+      z-index: -1;
+    }
+
+    .headlines-img{
+      position: relative;
+    }
+
+    .headlines-content {
+      position: absolute;
+      top: 32%;
+      left: 3%;
+      font-size: 1.2em;
+      color: white;
+    }
+
+    .headlines-content h4{
+      padding: 0.5em 0;
     }
   }
   
