@@ -161,6 +161,40 @@ h2{
       color: black;
     }
 
+    .funding-rounds{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .funding-round-item{
+      padding: 1em;
+      display: flex;
+      background:linear-gradient(to bottom,rgb(255, 32, 32) 45%, rgb(252, 236, 205) 20% 40%);
+    }
+
+    .one-image img{
+      width: 100%;
+    }
+
+    .one-image{
+      width: 4em;
+    }
+
+    .header-div{
+      color: white;
+      padding-left: 0.8em;
+    }
+
+    .header-div h4{
+      color: darkgray;
+    font-size: 0.8em;
+    }
+
+    .header-div h2{
+      color: black;
+      padding-top: 0.5em;
+      font-size: 1.4em;
+    }
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
