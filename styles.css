@@ -171,6 +171,37 @@ h2{
       display: flex;
       background:linear-gradient(to bottom,rgb(255, 32, 32) 45%, rgb(252, 236, 205) 20% 40%);
     }
+    .funding-content{
+      background: rgb(249, 234, 234);
+      color: rgb(87, 87, 87);
+      font-size: 0.9em;
+    }
+    .first-funding{
+      padding-left: 1em;
+    }
+    .border-bottom{
+      border-bottom:1px solid red;
+      opacity: 0.2;      
+    }
+    .row-wrap{
+     margin: 1em;
+    display: flex;
+    flex-direction: column;
+    }
+    .fas{
+      color: black;
+      font-size: 1.2em;
+      padding-right: 1em;
+    }
+    .icon-content{
+      margin: 1em 0;
+    }
+    .bottom-content{      
+      padding: 1em;
+      font-size: 0.9em;
+      line-height: 1.5;
+      background: rgb(255, 244, 245);
+    }
 
     .one-image img{
       width: 100%;
