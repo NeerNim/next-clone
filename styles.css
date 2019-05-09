@@ -10,9 +10,14 @@ html, body {
   text-size-adjust: 100%; /* 2 */
   box-sizing: border-box;
   font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 small {
   font-size: 80%;
+}
+h2{
+  color: red;
+  margin: 0.5em 0;  
 }
 
 /* universal*/
@@ -23,14 +28,17 @@ small {
 }
 
 
-
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body {
-      /* background: red; */
       color: darkred;
     }
+
+    header{
+      display: block;
+      overflow: hidden;
+    }
+    
     nav{
       display: flex;
       flex-direction: column;
@@ -84,14 +92,19 @@ small {
       display: none;
     }
 
-    .headlines{
-
-    }
-
     .row-items{
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      padding: 1em;
+      display: flex;
+      flex-direction: column;      
+    }
+    .news-img img{
+      width: 100%;
+      height: 3.5em;
+    }
+    .news-content{
+      padding-left: 0.5em;
+    }
+    .news-img{
+      width:8em;
     }
 
     .headlines img{
@@ -99,21 +112,55 @@ small {
       z-index: -1;
     }
 
+    .overlay:before{
+      position: absolute;
+      content:" ";
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      display: block;
+      z-index:0;
+      background-color: rgba(0,0,0,0.5);
+      }
+
     .headlines-img{
       position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin: 0.6em;
     }
 
     .headlines-content {
       position: absolute;
-      top: 32%;
-      left: 3%;
+      bottom: 0;
+      left: 0;
       font-size: 1.2em;
       color: white;
+      padding: 0.8em 1em;
     }
 
     .headlines-content h4{
       padding: 0.5em 0;
     }
+
+    .latets-news{
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
+    }
+    .news-item{
+      display: flex;   
+      flex-direction: row; 
+      margin-bottom: 0.5em;
+      color: rgb(203, 203, 203);
+    }
+    .news-content h3{
+      font-size: 0.8em;      
+      color: black;
+    }
+
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
