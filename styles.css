@@ -27,10 +27,8 @@ h2{
 
 /* universal*/
 
-#logo{
-  background: url("images/logo.png") no-repeat;
-  height: 3em;
-}
+
+
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -48,12 +46,15 @@ h2{
       display: flex;
       flex-direction: column;
       box-shadow: 0 0 32px rgba(0,0,0,.15);
-      background: rgb(255, 255, 255);
+      background: #fefefe;
     }
     .wrap-top{
       display: flex;
       flex-direction: row;
       width: 100%;
+    }
+    .top-nav{
+      display: none;
     }
     .date{
       width: 9em;
@@ -115,12 +116,14 @@ h2{
     .headlines img{
       width: 100%;
       z-index: -1;
+      margin-top: 6em;
     }
 
     .overlay:before{
       position: absolute;
       content:" ";
       top:0;
+      
       left:0;
       width:100%;
       height:100%;
@@ -381,6 +384,119 @@ h2{
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
     body {background: blue;}
+    #logo{
+  background: url("images/logo.png") no-repeat;
+  height: 3em;
+}
+
+header{
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 32px rgba(0,0,0,.15);
+  background: rgb(255, 255, 255);
+}
+.wrap-top{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.date{
+  width: 9em;
+  text-align: center;
+}
+.border{
+  border-right: 1px solid rgb(250, 250, 250);
+  opacity: 0.2;
+  height: 2.9em;
+}
+
+#logo{
+width: 13%;
+ height: auto;
+}   
+
+
+.right-nav{
+ display: none;
+}
+
+.msg-nav{
+  background: rgb(255, 217, 0);
+  font-size: .7em;
+  text-align: center;
+  padding: 0.8em 0;
+  color: black
+}
+
+.top-nav{
+  background: black;
+  padding: 0.5em 1em;
+}
+
+.top-nav ul li a{
+  color: white;
+  font-size: 0.8em;
+}
+.nav-wrap{
+  width: 87%;
+}
+.top-ul{
+  display: block;  
+}
+.bottom-ul li{
+  display: inline;
+}
+.bottom-ul{
+  padding: 0.8em 1em;
+}
+.bottom-ul li a{
+  color: lightgrey;
+  padding: 0 1em;
+  text-transform: uppercase;
+  font-size: 0.8em; 
+}
+
+.top-ul li{
+  display: inline;
+}
+
+.bottom-nav{
+  background: url("./images/search.png") no-repeat 100% 50%;
+}
+
+.bottom-ul{
+  display: block;
+}
+
+.row-items{
+  display: flex;
+  flex-direction: column;      
+}
+
+.news-img img{
+  width: 100%;
+  height: 3.5em;
+}
+.news-content{
+  padding-left: 0.5em;
+}
+.news-img{
+  width:8em;
+}
+
+.headlines img{
+  width: 100%;
+  z-index: -1;
+}
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
