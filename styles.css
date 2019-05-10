@@ -213,11 +213,7 @@ small {
     display: flex;
     flex-direction: column;
     }
-    .fas{
-      color: black;
-      font-size: 1.2em;
-      padding-right: 1em;
-    }
+    
     .icon-content{
       margin: 1em 0;
     }
@@ -329,7 +325,7 @@ small {
       background: #131313;
       padding: 1em 0;
     }
-    .fab{
+    .fab, .fas{
       background: rgb(38, 38, 38);
       border-radius: 50%;
       width: 15px;
@@ -348,8 +344,7 @@ small {
     .footer-imgs{
       width: 100%;
       justify-content: center;
-      display: flex;
-      padding: 0 0 0 1em;
+      display: flex;      
     }
     .footer-hrefs ul{
       text-align: center;
@@ -429,11 +424,6 @@ small {
     font-size: 0.9em;
     line-height: 1.5;
     background: rgb(255, 244, 245);
-}
-.fas {
-    color: black;
-    font-size: 1.2em;
-    padding-right: 1em;
 }
 .icon-content {
     margin: 1em 0;
@@ -537,7 +527,7 @@ small {
     display: block;
   }
   .news-item{
-    padding-left: 1em;
+    padding: 1em 0.5em;
   }
   .one-image img{
     width: 60px;
@@ -661,10 +651,7 @@ small {
     .news-img{
       width: 100%;
     }
-  .news-item{
-    
-  }
-
+  
   .big-screen-articles{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -743,11 +730,67 @@ small {
     grid-template-columns: 1fr 1fr 1fr; 
   }
 
-  .new-items{
-   
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1em;
+  }
+  .footer-top {
+      background: #131313;
+      padding: 1em 0;
   }
 
-  } 
+.footer-imgs {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 1em 0;
+}
+.footer-bottom {
+    padding: 3em;
+    text-align: center;
+    background: black;
+    font-size: 0.8em;
+    line-height: 1.7;
+}
+.footer-bottom span {
+    color: gray;
+}
+footer {
+    color: white;
+}
+
+.fab, .fas {
+    background: rgb(38, 38, 38);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 14px 14px 14px 14px;
+    text-align: center;
+    margin-right: 1em;
+    display: inline-block;
+}
+.footer-hrefs ul li a {
+    text-align: center;
+    text-transform: uppercase;
+    color: darkgrey;
+    font-size: 0.7em;
+    line-height: 1.5;
+    padding: 0 1em;
+}
+.footer-hrefs ul {
+    text-align: center;
+    padding-top: 1em;
+}
+b{
+  color:red;
+}
+.footer-hrefs ul li {
+    display: inline-block;
+}
+
+} 
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
