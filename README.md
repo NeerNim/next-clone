@@ -8,5 +8,5 @@ A responsive tech-focused magazine using media queries that adapts to all the de
 
 ## Live Demos
 
-https://raw.githack.com/NeerNim/next-clone/blob/development/index.html
+https://raw.githack.com/NeerNim/next-clone/development/index.html
 
